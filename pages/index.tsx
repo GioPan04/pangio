@@ -12,7 +12,7 @@ const Home = () => {
         <title>Gioele Pannetto</title>
       </Head>
       <NavBar show={inView}/>
-      <div className="h-screen bg-green-400 flex items-center justify-center">
+      <div className="h-screen flex items-center justify-center">
         <div className="flex flex-col font-title">
           <span className="text-5xl">Hi!</span>
           <span className="text-3xl blinking-cursor">I&apos;m Gioele Pannetto</span>
