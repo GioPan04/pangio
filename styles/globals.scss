@@ -22,10 +22,12 @@ a {
 }
 
 .icon-hover-white {
-  transition-property: stroke;
+  transition-property: opacity;
   transition-duration: .3s;
+
+  opacity: .5;
   
   &:hover {
-    stroke: rgba(255, 255, 255, 1);
+    opacity: 1;
   }
 }
