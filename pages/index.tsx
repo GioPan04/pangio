@@ -1,6 +1,7 @@
 import Head from 'next/head';
-import NavBar from '@components/NavBar';
 import { useInView } from 'react-intersection-observer';
+import NavBar from '@components/NavBar';
+import HomeHero from '@components/HomeHero';
 
 const Home = () => {
 
@@ -12,15 +13,7 @@ const Home = () => {
         <title>Gioele Pannetto</title>
       </Head>
       <NavBar show={inView}/>
-      <div className="h-screen flex items-center justify-center">
-        <div className="flex flex-col font-title">
-          <span className="text-5xl">Hi!</span>
-          <div className="text-4xl">
-            <span className="">I&apos;m </span><span className="blinking-cursor text-secondary">Gioele Pannetto</span>
-          </div>
-          <span className="mt-1 font-subtitle uppercase text-xs self-center opacity-60">Fullstack developer</span>
-        </div>
-      </div>
+      <HomeHero />
       <div ref={ref} className="font-text">
         <div className="h-screen"></div>
         <div className="h-screen"></div>
