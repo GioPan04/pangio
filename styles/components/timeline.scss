@@ -1,0 +1,16 @@
+.timeline {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: 1.1rem;
+    background-color: white;
+  }
+
+  &:nth-child(1) article {
+    background-color: $secondary-color;
+  }
+}
