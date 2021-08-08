@@ -20,3 +20,12 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.icon-hover-white {
+  transition-property: stroke;
+  transition-duration: .3s;
+  
+  &:hover {
+    stroke: rgba(255, 255, 255, 1);
+  }
+}
