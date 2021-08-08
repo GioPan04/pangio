@@ -12,12 +12,15 @@ const Home = () => {
         <title>Gioele Pannetto</title>
       </Head>
       <NavBar show={inView}/>
-      <div className="h-screen w-screen bg-green-400">
-        <h1>My website</h1>
+      <div className="h-screen bg-green-400 flex items-center justify-center">
+        <div className="flex flex-col font-title">
+          <span className="text-5xl">Hi!</span>
+          <span className="text-3xl blinking-cursor">I&apos;m Gioele Pannetto</span>
+        </div>
       </div>
-      <div ref={ref}>
-        <div className="h-screen w-screen bg-red-400"></div>
-        <div className="h-screen w-screen bg-blue-400"></div>
+      <div ref={ref} className="font-text">
+        <div className="h-screen bg-red-400"></div>
+        <div className="h-screen bg-blue-400"></div>
       </div>
     </>
   );
