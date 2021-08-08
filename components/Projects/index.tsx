@@ -5,7 +5,10 @@ import ProjectTile from './ProjectTile';
 const Projects: React.FC = () => {
   return (
     <HomeSection title="Projects" id="projects">
-      <div className="timeline flex flex-col gap-5">
+      <div className="timeline grid grid-cols-3">
+        <ProjectTile />
+        <ProjectTile />
+        <ProjectTile />
         <ProjectTile />
         <ProjectTile />
         <ProjectTile />
