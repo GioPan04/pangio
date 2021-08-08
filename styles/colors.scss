@@ -1,3 +1,12 @@
 $primary-color: #0D1821;
 $secondary-color: #E03616;
-$accent-color: #008DD5;
+// $accent-color: #008DD5;
+$accent-color: #008148;
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+.text-accent {
+  color: $accent-color;
+}
