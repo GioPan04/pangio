@@ -3,6 +3,10 @@
 @import 'components/blinking-cursor';
 @import 'components/vertical-separator';
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   padding: 0;
