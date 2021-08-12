@@ -1,6 +1,6 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ["pangio.it"]
+    domains: ["pangio.it", "localhost"]
   }
 }
