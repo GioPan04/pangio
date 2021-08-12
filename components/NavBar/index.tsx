@@ -12,7 +12,7 @@ interface ILink {
 const links: ILink[] = [
   {name: 'Home', link: '#'},
   {name: 'Who am I', link: '#whoami'},
-  {name: 'Blog', link: '/blog'},
+  {name: 'Projects', link: '#projects'},
 ];
 
 const NavBar: React.FC<NavBarTypes> = ({ show }) => {

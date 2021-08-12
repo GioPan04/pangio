@@ -26,7 +26,7 @@ const Home: NextPage<HomeProps> = ({ yearsOld }) => {
       <NavBar show={inView}/>
       <ContactMeBar />
       <HomeHero />
-      <div ref={ref} className="font-text p-20">
+      <div ref={ref} className="p-20 2xl:mx-auto 2xl:max-w-screen-2xl">
         <WhoAmI yearsOld={yearsOld} />
         <ProjectsSection />
       </div>
