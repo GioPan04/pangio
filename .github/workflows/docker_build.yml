@@ -26,5 +26,5 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: GioPan04/pangio:latest
+          tags: giopan04/pangio:latest
     
