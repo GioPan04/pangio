@@ -8,7 +8,6 @@ import WhoAmI from '@components/WhoAmI';
 import year_diff from 'helpers/years_diff';
 import { GetServerSideProps, NextPage } from 'next';
 import Footer from '@components/Footer';
-import Projects from '@components/Projects';
 
 type HomeProps = {
   yearsOld: number;
@@ -28,7 +27,6 @@ const Home: NextPage<HomeProps> = ({ yearsOld }) => {
       <HomeHero />
       <div ref={ref} className="font-text p-20">
         <WhoAmI yearsOld={yearsOld} />
-        <Projects />
         <div className="h-screen"></div>
       </div>
       <Footer />
