@@ -10,7 +10,7 @@ type WhoAmIProps = {
 const WhoAmI: React.FC<WhoAmIProps> = ({ yearsOld }) => {
   return (
     <HomeSection title="Who am I" id="whoami">
-      <div className="flex flex-row items-center gap-10">
+      <div className="flex flex-col sm:flex-row items-center gap-10">
         <p>
           Hi! I&apos;m Gioele Pannetto, a {yearsOld} years old programming enthusiast boy.
           I have this passion since I was 3 years old, the year my father gifted me my first computer.
