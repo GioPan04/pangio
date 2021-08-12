@@ -67,7 +67,7 @@ class AppDocument extends Document {
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
                     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Nunito:wght@700&family=Quicksand:wght@500&display=swap" rel="stylesheet" /> 
                 </Head>
-                <body>
+                <body className="bg-primary">
                     <Main />
                     <NextScript />
                     <noscript>
