@@ -1,5 +1,6 @@
 import Socials from '@components/Socials';
 import React from 'react';
+import { X } from 'react-feather';
 import ILink from 'types/ILink';
 
 type MenuProps = {
@@ -9,15 +10,19 @@ type MenuProps = {
 const Menu: React.FC<MenuProps> = ({ links }) => {
     return (
         <div className="fixed inset-0 bg-accent z-50">
-            <div className="flex flex-col">
-                <span>{'{'}</span>
-                {links.map((l, i) => <a href={l.link} key={i}>{`"${l.name}"`}{i < links.length - 1 ? ',' : ''}</a>)}
-                <span>{'}'}</span>
-            </div>
+            <div className="relative">
+                <X className="absolute top-3 right-3" size={40} />
 
-            <div>
-                You can find me here:
-                <div className="flex flex-row gap-2"><Socials size={24} /></div>
+                <div className="flex flex-col">
+                    <span>{'{'}</span>
+                    {links.map((l, i) => <a href={l.link} key={i}>{`"${l.name}"`}{i < links.length - 1 ? ',' : ''}</a>)}
+                    <span>{'}'}</span>
+                </div>
+
+                <div>
+                    You can find me here:
+                    <div className="flex flex-row gap-2"><Socials size={24} /></div>
+                </div>
             </div>
         </div>
     );
