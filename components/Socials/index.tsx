@@ -6,7 +6,7 @@ type SocialsProps = {
 };
 
 const Socials: React.FC<SocialsProps> = ({ size }) => {
-    const iconClasses = 'md:opacity-50 hover:opacity-100 transition-opacity duration-300';
+    const iconClasses = 'opacity-80 md:opacity-50 md:hover:opacity-100 transition-opacity duration-300';
 
     return (
         <>
