@@ -31,7 +31,7 @@ const Home: NextPage<HomeProps> = ({ yearsOld }) => {
       <Head>
         <title>Gioele Pannetto</title>
       </Head>
-      <Menu links={links} />
+      {/* <Menu links={links} /> */}
       <NavBar show={inView} links={links}/>
       <ContactMeBar />
       <HomeHero />
