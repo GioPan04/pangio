@@ -10,9 +10,10 @@ interface ILink {
 }
 
 const links: ILink[] = [
-  {name: 'Home', link: '#'},
-  {name: 'Who am I', link: '#whoami'},
-  {name: 'Projects', link: '#projects'},
+  {name: 'Home', link: '/#'},
+  {name: 'Who am I', link: '/#whoami'},
+  {name: 'Projects', link: '/#projects'},
+  {name: 'Blog', link: '/blog'},
 ];
 
 const NavBar: React.FC<NavBarTypes> = ({ show }) => {
