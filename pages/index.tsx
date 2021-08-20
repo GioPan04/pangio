@@ -9,7 +9,6 @@ import year_diff from 'helpers/years_diff';
 import { GetServerSideProps, NextPage } from 'next';
 import Footer from '@components/Footer';
 import ProjectsSection from '@components/ProjectsSection';
-import Menu from '@components/Menu';
 import ILink from 'types/ILink';
 
 type HomeProps = {
@@ -31,7 +30,6 @@ const Home: NextPage<HomeProps> = ({ yearsOld }) => {
       <Head>
         <title>Gioele Pannetto</title>
       </Head>
-      {/* <Menu links={links} /> */}
       <NavBar show={inView} links={links}/>
       <ContactMeBar />
       <HomeHero />
