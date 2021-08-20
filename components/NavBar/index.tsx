@@ -1,5 +1,5 @@
 import Socials from '@components/Socials';
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Menu, X } from 'react-feather';
 import ILink from 'types/ILink';
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';

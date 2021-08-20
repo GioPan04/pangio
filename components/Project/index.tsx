@@ -13,9 +13,9 @@ type ProjectProps = {
 const Project: React.FC<ProjectProps> = ({ name, imageUrl, tags, link, children }) => {
   return (
     <article className="flex flex-col-reverse lg:flex-row lg:even:flex-row-reverse group">
-      <div className="flex flex-col lg:group-even:items-end w-full lg:w-2/3">
+      <div className="flex flex-col lg:group-even:items-end w-full lg:w-1/2">
         <span className="text-secondary font-title text-3xl font-bold mb-2">{name}</span>
-        {children && <p className="mb-2 lg:w-2/3 lg:group-even:text-right">{children}</p>}
+        {children && <p className="mb-2 lg:group-odd:mr-5 lg:group-even:ml-5 lg:group-even:text-right">{children}</p>}
         <div className="flex flex-row gap-1">
           {tags && tags.map((tag, i) => <Tag key={i}>{tag}</Tag>)}
         </div>
@@ -28,7 +28,7 @@ const Project: React.FC<ProjectProps> = ({ name, imageUrl, tags, link, children 
           </a>
         )}
       </div>
-      <div className="w-full lg:w-1/3">
+      <div className="w-full lg:w-1/2">
         <div className="w-full aspect-w-16 aspect-h-9">
           <Image className="w-full h-full" src={imageUrl} alt={name} layout="fill" objectFit="cover" />
         </div>
