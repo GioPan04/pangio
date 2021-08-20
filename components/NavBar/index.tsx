@@ -1,7 +1,8 @@
 import Socials from '@components/Socials';
-import React, { useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { Menu, X } from 'react-feather';
 import ILink from 'types/ILink';
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
 type NavBarTypes = {
   show?: boolean;
@@ -11,6 +12,14 @@ type NavBarTypes = {
 const NavBar: React.FC<NavBarTypes> = ({ show, links }) => {
 
   const [ showMenu, setShowMenu ] = useState(false);
+
+  useEffect(() => {
+    if(showMenu) {
+      disableBodyScroll(document.body);
+    } else {
+      enableBodyScroll(document.body);
+    }
+  }, [showMenu]);
 
   return (
     <nav className={'z-40 w-screen bg-accent bg-opacity-90 text-white sm:p-2 py-2 fixed transition-all duration-150 ' + (show ? 'top-0 ' : '-top-12 ') + (showMenu ? 'bg-opacity-100' : '')}>
