@@ -10,8 +10,8 @@ type WhoAmIProps = {
 const WhoAmI: React.FC<WhoAmIProps> = ({ yearsOld }) => {
   return (
     <HomeSection title="Who am I" id="whoami">
-      <div className="flex flex-col md:flex-row items-center gap-10">
-        <p className="md:flex-1 xl:flex-initial">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-10">
+        <p className="md:w-1/2">
           Hi! I&apos;m Gioele Pannetto, a {yearsOld} years old programming enthusiast boy.
           I have this passion since I was 3 years old, the year my father gifted me my first computer.
           When I was 7 I developed my first Visual Basic script. At the age of 10 I created my first website in HTML and CSS, and so on with other programming languages not only for the web.
@@ -25,7 +25,7 @@ const WhoAmI: React.FC<WhoAmIProps> = ({ yearsOld }) => {
           Ho creato anche dei siti per parenti e amici, e con questo ho capito che, oltre alla passione per i computer, ho anche la passione di autare gli altri.
           Spero di aiutare anche te! Ti auguro una Buona Navigazione! */}
         </p>
-        <div className="w-full md:flex-1 xl:flex-initial">
+        <div className="w-full md:w-1/2 xl:w-1/3">
           <Image className="rounded" src={profilePic} alt="Gioele Pannetto"/>
         </div>
       </div>
