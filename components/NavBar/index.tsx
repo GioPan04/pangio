@@ -50,7 +50,7 @@ const NavBar: React.FC<NavBarTypes> = ({ show, links }) => {
           </div>
         </div>
 
-        <div className="absolute bottom-6">
+        <div className="mt-6">
             <span className="uppercase text-sm font-subtitle font-semibold mb-2 block text-opacity-90">My socials</span>
             <div className="flex flex-row gap-4 mt-3"><Socials size={30} /></div>
         </div>
