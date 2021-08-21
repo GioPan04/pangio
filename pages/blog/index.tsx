@@ -1,6 +1,7 @@
 import octokit, { IPost } from '../../blog/octokit';
 import { GetServerSideProps, NextPage } from 'next';
 import React from 'react';
+import PostTile from '@components/PostTile';
 
 type BlogPageProps = {
   posts: IPost[];
@@ -9,7 +10,7 @@ type BlogPageProps = {
 const BlogPage: NextPage<BlogPageProps> = ({ posts }) => {
   return (
     <>
-      {posts.map((p, i) => <span key={i}>{p.title}</span>)}
+      {posts.map((p, i) => <PostTile data={p} key={i} />)}
     </>
   );
 };
