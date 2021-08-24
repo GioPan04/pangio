@@ -7,7 +7,7 @@ export default octokit;
 export interface IPost {
   title: string;
   comments: number;
-  body?: string;
+  body?: string | null | undefined;
   created_at: string;
   number: number;
 }
