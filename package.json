@@ -10,15 +10,19 @@
   },
   "dependencies": {
     "@tailwindcss/aspect-ratio": "^0.2.1",
-    "@types/marked": "^2.0.4",
+    "@types/marked": "^3.0.0",
+    "@types/react-syntax-highlighter": "^13.5.2",
     "date-fns": "^2.23.0",
-    "marked": "^3.0.0",
+    "marked": "^3.0.1",
     "next": "11.1.0",
     "octokit": "^1.4.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-feather": "^2.0.9",
     "react-intersection-observer": "^8.32.0",
+    "react-markdown": "^7.0.0",
+    "react-syntax-highlighter": "^15.4.4",
+    "remark-gfm": "^2.0.0",
     "sass": "^1.37.5"
   },
   "devDependencies": {
