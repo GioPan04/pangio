@@ -1,4 +1,5 @@
 import 'tailwindcss/tailwind.css';
+import '@animxyz/core';
 import '../styles/globals.scss';
 import type { AppProps } from 'next/app';
 
