@@ -7,6 +7,12 @@ class AppDocument extends Document {
         return (
             <Html lang="en">
                 <Head>
+		    <script 
+			async 
+			defer 
+			data-domain="pangio.it" 
+			src="https://dashboard.pangio.it/js/plausible.js">
+		    </script>
                     <meta
                         key="description"
                         name="description"
