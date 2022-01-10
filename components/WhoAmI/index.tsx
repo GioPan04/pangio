@@ -26,7 +26,7 @@ const WhoAmI: React.FC<WhoAmIProps> = ({ yearsOld }) => {
           Spero di aiutare anche te! Ti auguro una Buona Navigazione! */}
         </p>
         <div className="w-full md:w-1/2 xl:w-1/3">
-          <Image className="rounded" src={profilePic} alt="Gioele Pannetto"/>
+          <Image className="rounded" src={profilePic} width={460} height={574} alt="Gioele Pannetto"/>
         </div>
       </div>
     </HomeSection>

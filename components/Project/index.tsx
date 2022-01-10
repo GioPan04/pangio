@@ -30,7 +30,7 @@ const Project: React.FC<ProjectProps> = ({ name, imageUrl, tags, link, children 
       </div>
       <div className="w-full lg:w-1/2">
         <div className="w-full aspect-w-16 aspect-h-9">
-          <Image className="w-full h-full" src={imageUrl} alt={name} layout="fill" objectFit="cover" />
+          <Image className="w-full h-full" width={688} height={387} src={imageUrl} alt={name} objectFit="cover" />
         </div>
       </div>
     </article>
